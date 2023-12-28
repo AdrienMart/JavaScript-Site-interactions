@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.entete {
+  min-height:100vh;
+  width: 100%;
+  background: url(../image/Pixbuster-Desktop-Wallpaper-4K-010.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 1% 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  width: 125px;
+}
+
+nav ul{
+  flex: 1;
+  text-align: right;
+}
+
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+
+nav ul li a {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+
+nav ul li ::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+
+}
+
+nav ul li :hover::after {
+  width: 100%;
+}
+
+.texte-boite{
+    color: #fff;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 90vw;
+    margin: 3%;
+}  
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 5%;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.team {
+    max-width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .images,
+    .team {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 80px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-text {
+    margin-top: 10px;
+}
